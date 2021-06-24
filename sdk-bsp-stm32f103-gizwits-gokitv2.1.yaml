@@ -1,0 +1,97 @@
+board:
+  buy_url_cn: https://item.taobao.com/item.htm?spm=a230r.7195193.1997079397.9.47c5181e8hgiak&id=534323540358&abbucket=6
+  buy_url_global: https://item.taobao.com/item.htm?spm=a230r.7195193.1997079397.9.47c5181e8hgiak&id=534323540358&abbucket=6
+  debug_interface: SWD
+  debugger: ST-LINK
+  description_en: GOKIT V2.1 is a development board based on ARM Cortex-M3 core launched
+    by Gizwits. The highest frequency is 72MHz. The development board is a prototype
+    of hardware development platform designed for the Internet of Things, with rich
+    onboard resources. It can give full play to the chip performance of STM32F103.
+    The base plate and extension plate structure are used to facilitate the expansion
+    of modules.
+  description_zh: GoKit V2.1 是机智云 (GizWits) 推出的一款基于 ARM Cortex-M3 内核的开发板，最高主频为 72Mhz，该开发板专为物联网打造的硬件开发平台原型，具有丰富的板载资源，可以充分发挥
+    STM32F103 的芯片性能。采用底板加扩展板结构，方便扩展模块。
+  emulator_machine: ''
+  large_image: documents/images/board.png
+  name: STM32F103-GIZWITS-GOKITV2.1
+  price_cn: 168 CNY
+  price_global: 25.92 USD
+  sale_contact_cn: http://docs.gizwits.com/zh-cn/deviceDev/Gokit2%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html
+  sale_contact_global: http://docs.gizwits.com/zh-cn/deviceDev/Gokit2%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97.html
+  small_image: documents/images/board_gaitubao_200x136.png
+  vendor: gizwits
+  version: '2.1'
+chip:
+  chip_name: STM32F103C8T6
+  clock_source: HSE
+  device_vendor: STMicroelectronics
+  family_name: STM32
+  rx_name: PA10
+  series_name: STM32F1
+  source_freq: '8000000'
+  sub_series_name: STM32F103
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: sheet
+  file: documents/stm32f103c8.pdf
+  title: stm32f103c8
+example_projects: []
+features:
+- 'MCU: STM32F103C8T6, main frequency 72MHz, 64KB Flash, 20KB RAM'
+- 'LED: 4 PCS, LED1-LED4, red'
+- 'Button: 1, Reset Reset'
+- 'Commonly used interface: USB to serial port, etc'
+- Debugging interface, standard SWD
+features_zh:
+- MCU：STM32F103C8T6，主频 72MHz，64KB FLASH ，20KB RAM
+- LED：4个，LED1 - LED4，红色
+- 按键：1个，RESET 复位
+- 常用接口：USB 转串口等
+- 调试接口，标准 SWD
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .gitignore
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - figures
+    - Kconfig
+    - libraries
+    - makefile.targets
+    - project.ewd
+    - project.ewp
+    - project.eww
+    - project.uvopt
+    - project.uvoptx
+    - project.uvproj
+    - project.uvprojx
+    - README.md
+    - rt-thread
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvopt
+    - template.uvoptx
+    - template.uvproj
+    - template.uvprojx
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files: []
+  project_description: ''
+  project_name: stm32f103-gizwits-gokitv21
+  project_type: rt-thread|@full|@4.0.2
+yaml_version: 3
